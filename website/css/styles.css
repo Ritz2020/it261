@@ -8,11 +8,11 @@
 
 body{
     background:beige;
-    font-family: :Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    background:yellow;
+    background:darkgrey;
     padding:20px;
     /* height:200px; */
     
@@ -23,6 +23,10 @@ header {
     margin:0px auto;
     /* background:tan; */
     overflow:hidden;
+}
+
+main ul {
+    list-style-type: none;
 }
 
 nav ul{
@@ -63,9 +67,9 @@ nav a{
 main{
     width:62%;
     /* height:400px; */
-    background:lightblue;
+    background:darkgray;
     float:left;
-    padding:15px 10px 0 10px;
+    padding:15px 10px 15px 10px;
     
 }
 
@@ -74,15 +78,15 @@ aside{
     /* height:300px; */
     background:lightsalmon;
     float:right;
-    padding:15px 10px 0 10px;
+    padding:15px 10px 15px 10px;
     
 
 }
 
 footer{
-    height:60px;
-    line-height: 60px;
-    background: #ddd;
+    height:50px;
+    line-height: 50px;
+    background: darkgrey;
     clear:both;
 }
 
@@ -98,7 +102,7 @@ footer li{
 }
 
 img{
-    max-width: 1200px;
+    max-width: 100%;
     display: block;
 }
 
@@ -107,6 +111,7 @@ img{
 p{
     margin-bottom:20px;
     line-height:1.4;
+    color:rgb(54, 54, 54);
 }
 
 h1{
