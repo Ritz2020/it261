@@ -55,7 +55,7 @@
     $_POST['capucinos']&&
     $_POST['americanos']&&
     $_POST['comments'])) {
-        echo '<p class="erro">Please fill out all of the fields</p>';
+        echo '<p class="error">Please fill out all of the fields</p>';
 
     }
     //end empty
