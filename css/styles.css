@@ -1,168 +1,77 @@
-/* Styles for my portal page */
+/* style for my form3.php */
 
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
+* {padding:0;
+margin:0;
+box-sizing: border-box;}
 
 body {
-    background:dimgrey;
+    background:rgb(251, 213, 219);
 }
 
-#wrapper {
-    max-width:1200px;
-    margin:20px auto;
+form {
+    max-width:450px;
+    margin:0 auto 10px auto;
 }
 
-nav {
-    height:60px;
-    background:lemonchiffon;
-    line-height:60px;
-    margin-bottom:20px;
+lable {
+    display:block;
+    margin-bottom: 5px;
 }
 
-nav li{
-    float:left;
-    width:16.66%;
-    text-align:center;
-    list-style-type:none;
+input, textarea {
+    width:100%;
+    display:block;
+    margin-bottom: 10px;
+    height:30px;
+
 }
 
-nav a {
-    color:darkslategrey;
-    text-decoration:none;
+textarea {
+    resize:none;
+    height:120px; 
 }
 
-
-h1 a {
-        color:aliceblue;
-    text-decoration:none;
+input[type=submit] {
+    width:auto;
 }
 
-ol a {
-    color:darkslategrey;
-    text-decoration:none;
+fieldset {
+    border:2px solid rgb(130, 200, 230);
+    padding:10px;
 }
-    
-
-
-main {
-    width:62%;
-    float:left;
-}
-
-aside {
-    width:35%;
-    float:right;
-    padding-top: 10px;
-    margin-bottom: 30px;
-    background-color:lemonchiffon;
-}
-
-
-#half-left {
-    width:45%;
-    float:left;
-    
-}
-
-#half-right {
-    width:45%;
-    float:right;
-   
-}
-
-footer{
-    height:60px;
-    line-height: 60px;
-    background:lemonchiffon;
-    clear:both;
-    
-    
-}
-
-footer ul{
-    display:flex;
-    justify-content:center;
-    list-style-type:none;
-}
-
-footer li{
-    margin:0 15px;
-    
-}
-
-/* typorgraphy */
 
 h1{
-    text-align: center;
-    font-size: 3em;
+    text-align:center;
     margin:20px 0;
-    
+    color:darkslategray;
 }
 
 h2{
-    font-size:2em;
     text-align:center;
-    margin-bottom:20px;
-    color:aliceblue;
+    margin:10px 0;
+    color:darkslategray;
 }
 
-aside h2, aside h3{
-    color:darkslategrey;
-    margin-left: 20px;
+p {
+    text-align:center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.error {
+    color:rgb(3, 204, 204);
+    font-style:italic;
+    font-size:1.2em;
+    margin-top:10px;
+}
+
+.box {
+    width:400px;
+    border:4px dotted orchid;
+    margin:20px auto;
+}
+
+li {
+    margin-left: 30px;
     
 }
-
-main h2, aside h2{
-    text-align:left;
-}
-
-h3{
-    color:aliceblue;
-    margin-bottom:5px;
-}
-
-p{
-    font-size: 1em;
-    margin-bottom: 20px;
-    color:aliceblue;
-}
-
-ol{
-    padding-left: 30px;
-    color:darkslategrey; 
-    margin-bottom: 20px;
-}
-
-ol li {
-    text-align: left;
-}
-
-hr {
-    color: darkslategrey;
-    margin-bottom: 30px;
-    clear:both;
-}
-
-img {
-    margin-bottom: 30px;
-    display:block;
-}
-
-.right {
-    float:right;
-    width:300px;
-    margin-left: 20px;
-}
-
-.homework {
-    width:700px;
-    /* margin:20px auto; */
-    float:left;
-
-}
-
-
-
