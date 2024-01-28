@@ -32,11 +32,16 @@ h2{
     
 }
 
-p{
+p{  text-align:center;
     font-size:.68em;
     color:red;
     font-weight:normal;
 }
+
+.error{ 
+    font-size:.9em;
+    font-weight:normal;
+} 
 
 </style>
 <!-- style part was missing, added style css code line 11-38-->
@@ -66,6 +71,11 @@ if (isset($_POST['num1'],
 $_POST['num2'])){
 // Added $_POST['num2'] on line 66
 
+if(empty($_POST['num1']&&
+$_POST['num2'])) {
+    echo'<p class="error">Please fill out all the numbers!</p>';
+}else{
+
 $num1 = $_POST['num1'];
 $num2 = $_POST['num2'];
 $myTotal = $num1 + $num2;
@@ -82,7 +92,7 @@ echo ' <p> and the answer is <br>
 
 echo'<p><a href="">Reset page</a></p>';
 // Adde </p>'; to close <p>, on line 83
-
+}
 }
 ?>
 <!-- Added ?> to close php on line 87-->
