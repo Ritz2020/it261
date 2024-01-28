@@ -1,0 +1,77 @@
+/* style for my form3.php */
+
+* {padding:0;
+margin:0;
+box-sizing: border-box;}
+
+body {
+    background:rgb(251, 213, 219);
+}
+
+form {
+    max-width:450px;
+    margin:0 auto 10px auto;
+}
+
+lable {
+    display:block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width:100%;
+    display:block;
+    margin-bottom: 10px;
+    height:30px;
+
+}
+
+textarea {
+    resize:none;
+    height:120px; 
+}
+
+input[type=submit] {
+    width:auto;
+}
+
+fieldset {
+    border:2px solid rgb(130, 200, 230);
+    padding:10px;
+}
+
+h1{
+    text-align:center;
+    margin:20px 0;
+    color:darkslategray;
+}
+
+h2{
+    text-align:center;
+    margin:10px 0;
+    color:darkslategray;
+}
+
+p {
+    text-align:center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.error {
+    color:rgb(3, 204, 204);
+    font-style:italic;
+    font-size:1.2em;
+    margin-top:10px;
+}
+
+.box {
+    width:400px;
+    border:4px dotted orchid;
+    margin:20px auto;
+}
+
+li {
+    margin-left: 30px;
+    
+}
