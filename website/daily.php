@@ -14,9 +14,9 @@ include('./includes/header.php'); ?>
             </h1>
             
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum tellus sit amet ligula blandit, sed suscipit eros sodales. Cras id orci sit amet augue lobortis molestie. Duis dictum semper varius. Aliquam malesuada erat felis, vitae porttitor felis interdum quis. Mauris mauris erat, porta sed nisi vel, faucibus maximus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero nisl, commodo id malesuada ut, congue et purus. Curabitur bibendum ullamcorper condimentum. Aliquam sit amet urna venenatis elit imperdiet facilisis. </p>
-            <h2 class="<?php echo $actDay ;?>"><?php echo $day; ?></h2>
+            <h2 style="color:<?php echo $actDay ;?>" class="<?php echo $actDay ;?>"><?php echo $day;?>!</h2>
             <p><?php echo $details; ?></p>
-            <h2> Don't see your favorite planet?
+            <h2> Don't see your favorite celestial bodies?
                 Check out the days below! </h2>
         <ul>
             <li><a style="color:<?php
@@ -72,10 +72,10 @@ include('./includes/header.php'); ?>
         </main>
 
         <aside>
-            <h3>This is the beautiful planet!</h3>
+            <h3>The beautiful celestial body</h3>
             
             <img src="./images/<?php echo $picture; ?>" alt="<?php echo $altTag; ?>">
-
+            <h4 style="color:<?php echo $actDay; ?>">This is the <b><?php echo $altTag; ?></b>! </h4>
            
 
         </aside>

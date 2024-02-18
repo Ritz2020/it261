@@ -55,17 +55,25 @@ form ul{
 }
 
 .box {
-    max-width:400px;
+    width:400px;
     background: rgb(246, 209, 135);
     padding:10px;
     margin:0 auto;
     border: 2px groove goldenrod;
 }
-
-
+.box1 {
+    max-width:560px;
+    padding:10px;
+    margin:0 auto;
+}
 h1{
+    margin-top: 20px;
+}
+
+h1, h2{
     color:rgb(128, 95, 52);
     text-align:center;
+    margin-bottom: 15px;
 }
 
 .center{

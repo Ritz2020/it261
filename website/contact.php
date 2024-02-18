@@ -11,15 +11,15 @@ include('./includes/header.php'); ?>
             
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum tellus sit amet ligula blandit, sed suscipit eros sodales. Cras id orci sit amet augue lobortis molestie. Duis dictum semper varius. Aliquam malesuada erat felis, vitae porttitor felis interdum quis. Mauris mauris erat, porta sed nisi vel, faucibus maximus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero nisl, commodo id malesuada ut, congue et purus. Curabitur bibendum ullamcorper condimentum. Aliquam sit amet urna venenatis elit imperdiet facilisis. </p>
             
-        <?php
-        include('./includes/form.php'); ?>
+        
         
         </main>
 
         <aside>
-            <h3>This is the beautiful planet!</h3>
+            <h3>We'd love to hear from you!</h3>
             
-           
+           <?php
+        include('./includes/form.php'); ?>
 
            
 

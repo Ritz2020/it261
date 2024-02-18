@@ -4,7 +4,18 @@ include('./includes/header.php'); ?>
         
     <div id="wrapper">
         <div id="hero">
-            <img src="images/naturepeople.jpg" alt="Nature and Human">
+            <!-- <img src="images/naturepeople.jpg" alt="Nature and Human"> -->
+            <?php 
+            $photos[0] = 'supermoon';
+            $photos[1] = 'naturepeople';
+            $photos[2] = 'colorsky';
+            $photos[3] = 'sky';
+            $photos[4] = 'milkyway';
+            
+            $i = rand(0,4);
+            $selected_image = ''.$photos[$i].'.jpg';
+            echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'"   >';
+            ?>
 
         </div>
             <!-- end hero -->

@@ -29,6 +29,10 @@ switch(THIS_PAGE) {
         $title = 'Contact page of our Website Project';
         $body = 'contact inner';
         break;
+    case 'thx.php' :
+            $title = 'Thank you!';
+            $body = 'thx inner';
+            break;
 
     case 'gallery.php' :
         $title = 'Gallery page of our Website Project';
