@@ -246,7 +246,7 @@ if(!empty(
 <span><?php echo $regions_err; ?></span>
 
 <label>Comments</label>
-<textarea name="comments"><?php if(isset($_POST['privacy'])) echo 'checked="checked"';?></textarea>
+<textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']);?></textarea>
 
 <span><?php echo $comments_err; ?></span>
 
