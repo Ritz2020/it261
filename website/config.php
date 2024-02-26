@@ -25,9 +25,9 @@ switch(THIS_PAGE) {
         $body = 'project inner';
         break;
 
-    case 'contact.php' :
+    case 'contact-me.php' :
         $title = 'Contact page of our Website Project';
-        $body = 'contact inner';
+        $body = 'contact-me inner';
         break;
     case 'thx.php' :
             $title = 'Thank you!';
@@ -46,7 +46,7 @@ $nav = array(
     'about.php' => 'About',
     'daily.php' => 'Daily',
     'project.php' => 'Project',
-    'contact.php' => 'Contact',
+    'contact-me.php' => 'Contact',
     'gallery.php' => 'Gallery',
 );
 function make_links($nav) {
