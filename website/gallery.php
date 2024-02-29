@@ -1,4 +1,8 @@
 <?php 
+include('config.php');
+include('./includes/header.php'); ?>
+
+<?php 
 
 $dog['Border_Collie'] = 'border_Recognized as <b>The smartest dog</b>!';
 $dog['Poodle'] = 'poodle_Love to learn new tricks.';
@@ -25,6 +29,7 @@ $dog['Doberm_Pinscher'] = 'doberm_Versatile, reponsive and quick learner.';
         table {
             border:2px solid orange;
             border-collapse: collapse;
+            margin:10px auto;
         }
 
         td {
@@ -37,10 +42,10 @@ $dog['Doberm_Pinscher'] = 'doberm_Versatile, reponsive and quick learner.';
             margin:30px auto;
         }
         img {
-            max-width:100%;
+            max-width:450px;
         }
         
-footer{
+/* footer{
     height: 60px;
     line-height: 60px;
     border-top: 1px dotted brown;
@@ -58,7 +63,7 @@ footer li{
     justify-content:center ;
     margin:15px;
     
-}
+} */
 
        
     </style>
