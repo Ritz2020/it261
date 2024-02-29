@@ -174,7 +174,30 @@ aside p {
     padding-left: 8px;
     padding-top: 10px;
     padding-bottom: 5px;
-    border: 1px solid,whitesmoke;
+}
+
+#wrapper_gallery {
+    max-width: 1000px;
+    margin:30px auto;
+}
+
+table {
+    border:2px solid orange;
+    border-collapse: collapse;
+    margin:10px auto;
+}
+
+th {
+    height: 60px;
+    text-align:center;
+    font-size: 1.6em;
+    color:darkblue;
+}
+
+td {
+    border:1px solid grey;
+    padding:6px;
+    
 }
 
 h1{
@@ -207,4 +230,10 @@ legend {
     font-style: italic;
     font-size: 1.1em;
     
+}
+
+
+
+td img {
+    max-width:450px;
 }
