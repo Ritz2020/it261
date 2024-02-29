@@ -17,14 +17,14 @@ $dog['Doberm_Pinscher'] = 'doberm_Versatile, reponsive and quick learner.';
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Week 8 homework Gallery</title>
-
+    <title>Week 8 homework Gallery</title> -->
+<!-- 
     <style>
         table {
             border:2px solid orange;
@@ -32,12 +32,20 @@ $dog['Doberm_Pinscher'] = 'doberm_Versatile, reponsive and quick learner.';
             margin:10px auto;
         }
 
+        th {
+            height: 50px;
+            line: height 50px;
+            text-align:center;
+            font-size: 1.6em;
+            color:darkblue;
+        }
+
         td {
             border:1px solid grey;
             padding:6px;
             
         }
-        #wrapper {
+        #wrapper_gallery {
             max-width: 1000px;
             margin:30px auto;
         }
@@ -45,32 +53,16 @@ $dog['Doberm_Pinscher'] = 'doberm_Versatile, reponsive and quick learner.';
             max-width:450px;
         }
         
-/* footer{
-    height: 60px;
-    line-height: 60px;
-    border-top: 1px dotted brown;
-    font-size: .9em;
-}
-
-footer ul{
-    display:flex;
-    justify-content:center;
-    list-style-type:none;
-    margin-bottom: 0;
-}
-
-footer li{
-    justify-content:center ;
-    margin:15px;
-    
-} */
 
        
-    </style>
-</head>
-<body>
-    <div id="wrapper">
+    </style> -->
+<!-- </head> -->
+<!-- <body> -->
+    <div id="wrapper_gallery">
     <table>
+        <tr>
+        <th colspan="3" >The most intelligent dogs </th>
+        </tr>
         <?php foreach($dog as $name => $image) :?>
         <tr>
             <td><img src="images/gallery/<?php echo substr($image, 0, 6) ;?>.jpg" alt="<?php echo str_replace('_', ' ', $name);?>"></td>
