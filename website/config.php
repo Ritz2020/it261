@@ -2,7 +2,7 @@
 
 
 ob_start();
-
+include('credentials.php');
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 switch(THIS_PAGE) {
@@ -45,7 +45,7 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'building.php' => 'Building',
     'contact-me.php' => 'Contact',
     'gallery.php' => 'Gallery',
 );
