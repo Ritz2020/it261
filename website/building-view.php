@@ -4,7 +4,7 @@
 // the following information is above the doctype
 
 include('config.php');
-include('./includes/header.php');
+// include('./includes/header.php');
 // is Get set???
 
 if(isset($_GET['id'])) {
@@ -43,13 +43,26 @@ include('./includes/header.php');
 // our open div #wrapper is inside the header.php
 
 ?>
-
+<div id="wrapper">
 <main>
-<h1>Welcome to our Architecture View Page</h1>
-<h2>Intruducing:<?php echo $first_name; ?></h2>
+<h1>Welcome to Architecture View Page</h1>
+<h3>The most influntial architecture's image!</h3>
+<figure>
+<img src="./images/building<?php echo $id; ?>.jpg" alt="<?php echo $building_name; ?>">
+<figcaption>
+<?php echo $blurb ;?>
+</figcaption>
+  
+</figure>
+
+
+</main>
+
+<aside>
+<h2>Intruducing:<?php echo $building_name; ?></h2>
 <ul>
-    <?php
-    echo '
+    <?php 
+    echo'
     <li><b> Building Name:</b>'.$building_name.'</li>
     <li><b> Designer Name:</b>'.$designer_name.'</li>
     <li><b> Location:</b>'.$location.'</li>
@@ -60,19 +73,7 @@ include('./includes/header.php');
     ?>
 </ul>
 <p><?php echo $details;?></P>
-<p>Return to our <a href="project.php" > Project Page!</a></p>
-
-</main>
-
-<aside>
-<h3>The most influntial architecture's image!</h3>
-<figure>
-<img src="./images/people<?php echo $id; ?>.jpg" alt="<?php echo $building_name; ?>">
-<figcaption>
-<?php echo $blurb ;?>
-</figcaption>
-  
-</figure>
+<p>Return to our <a href="building.php" > Building Page!</a></p>
 </aside>
 </div>
 <!-- end wrapper -->

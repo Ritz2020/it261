@@ -20,10 +20,14 @@ switch(THIS_PAGE) {
         $title = 'Daily page of our Website Project';
         $body = 'daily inner';
         break;
-    case 'project.php' :
-        $title = 'Project page of our Website Project';
-        $body = 'project inner';
+    case 'building.php' :
+        $title = 'Building page of our Website Project';
+        $body = 'building inner';
         break;
+    case 'building-view.php' :
+            $title = 'Building-view page of our Website Project';
+            $body = 'building-view inner';
+            break;
 
     case 'contact-me.php' :
         $title = 'Contact page of our Website Project';

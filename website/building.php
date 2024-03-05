@@ -4,7 +4,7 @@ include('config.php');
 include('./includes/header.php');
 
 ?>
-
+<div id="wrapper">
 <main>
 <h1>Welcome to the Most Influntial Contemprary Architectures Page</h1>
 
@@ -53,6 +53,30 @@ while($row = mysqli_fetch_assoc($result)) {
 </main>
 
 <aside>
+    <h3> Our random architectures' images</h3>
+<?php 
+            $photos[0] = 'building1';
+            $photos[1] = 'building2';
+            $photos[2] = 'building3';
+            $photos[3] = 'building4';
+            $photos[4] = 'building5';
+            
+            $i = rand(0,4);
+            $selected_image = ''.$photos[$i].'.jpg';
+            echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'"   >';
+            ?>
+<?php 
+            $photos[5] = 'building6';
+            $photos[6] = 'building7';
+            $photos[7] = 'building8';
+            $photos[8] = 'building9';
+            $photos[9] = 'building10';
+            
+            $i = rand(5,9);
+            $selected_image = ''.$photos[$i].'.jpg';
+            echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'"   >';
+            ?>
+            
 
 </aside>
 </div>
