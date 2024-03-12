@@ -8,8 +8,8 @@ session_start();
 include('config.php');
 // we will eventurally have a header include
 // include('./includes/header.php');
-
-$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+// $sql = 'SELECT * FROM users';
+$iConn = mysqli_connect(DB_HOST, DB_USER,  DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
 // we will be asking if reg_user isset
 // we will also be using a new function which is mysqli_real_escape_string
@@ -86,7 +86,7 @@ if(isset($_POST['reg_user'])) {
 
         // logically - we have to insert the information into our database
 
-        $query = "INSERT INTO users (first_name, last_name, email, username, password) VALUES ('first_name', 'last_name', 'email', 'username', 'password')";
+        $query = "INSERT INTO users (first_name, last_name, email, username, password) VALUES ('$first_name', '$last_name', '$email', '$username', '$password')";
 
         mysqli_query($iConn, $query);
 
@@ -101,3 +101,46 @@ if(isset($_POST['reg_user'])) {
 
 } //closed if isset reg_user
 
+
+if(isset($_POST['login_user'])) {
+// our login page will only have two input fields - one for username and one for password
+    $username = mysqli_real_escape_string($iConn, $_POST['username']);
+    $password = mysqli_real_escape_string($iConn, $_POST['password']);
+
+if(empty($username)) {
+    array_push($errors, 'Username is required');
+}
+
+if(empty($password)) {
+    array_push($errors, 'Password is required');
+}
+
+// we are counting our errors, and if we have no errors - we will continue the same way
+
+if(count($errors) == 0) {
+    $password = md5($password);
+    // we are going to query our users table to make sure that our username AND password match 
+$query = "SELECT * FROM users WHERE username = 'username' AND password = '$password'";
+
+$results = mysqli_query($iConn, $query);
+
+if(mysqli_num_rows($results) == 1) {
+    $_SESSION['username'] = $username;
+    $_SESSION['success'] = $success;
+// if the above is successful, we will be directed to the index.php!!!
+
+    header('Location:index.php');
+
+} else {
+    array_push($errors, 'Wrong username/password combo!!!');
+    
+}
+
+}//end count errors
+
+
+
+
+
+
+} // close if isset login_user

@@ -3,9 +3,10 @@
 ob_start();  // prevents header errors before reading the whole page!
 define('DEBUG', 'TRUE');  // We want to see our errors
 
-include('credentials.php');
+include('credentials1.php');
 
 $errors = array();
+$success = 'You have successfully logged on!';
 
 
  
